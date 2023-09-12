@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Medina | Crud</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-dark bg-gradient">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand fw-bold text-light">Home</a>
+            <form class="d-flex">
+                <input type="search" id="search" name="search" placeholder="Buscar" class="form-control me-2">
+                <button type="submit" class="btn btn-warning">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <p><h3 class="text-center p-3">Crud Models View Controller</h3></p>
+
+    <div class="container my-2">
+        <div class="row p-1">
+            <form class="col-3 p-3 mt-5" method="post" id="task-form">
+                <h3 class="text-center p-3">Formulario de registro</h3>
+    
+                <div class="mb-3">
+                    <label for="nombre" class="form-label fw-bold">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label fw-bold">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Escribe tu apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label fw-bold">Celular</label>
+                    <input type="number" class="form-control" name="celular" id="celular" placeholder="Escribe tu celular" required>
+                </div>
+                <div class="mb-3">
+                    <label for="genero" class="form-label fw-bold">Genero</label>
+                    <select class="form-select form-control" name="genero" id="genero">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+                <input type="hidden" id="taskId">
+                <button type="submit" class="btn btn-primary" value="registrar" name="registrar">Registrar</button>
+                <button type="reset" class="btn btn-danger" value="cancelar" name="cancelar">Cancelar</button>
+            </form>
+    
+            <div class="col-md-7">
+
+                <div class="card my-4" id="task-result">
+                    <div class="card-body">
+                        <ul id="container"></ul>
+                    </div>
+                </div>
+
+                <table class="table table-bordered table-sm">
+                    <thead class="bg-dark bg-gradient text-center text-white">
+                        <tr>
+                            <td scope="col">Id</td>
+                            <td scope="col">Nombres</td>
+                            <td scope="col">Apellidos</td>
+                            <td scope="col">Celular</td>
+                            <td scope="col">Genero</td>
+                            <td scope="col">Opciones</td>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" id="tasks"></tbody>
+                </table>
+            </div>
+        </div>
+    </div><br><br>
+
+    <footer class="bg-dark bg-gradient p-2 mt-5 text-light position-fixed bottom-0 w-100 text-center">
+        Desarrollo Web | Creado por Omar Medina | Web and Net
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+
+</html>

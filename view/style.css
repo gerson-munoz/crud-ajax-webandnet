@@ -1,0 +1,19 @@
+body {
+    background-image: url(img/fondo_2.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    font-size: medium; */
+}
+
+form{
+    /* background-color: transparent;
+    height: 550px; */
+    border-radius: 20px;
+    border-style: double;
+    border-color: cornflowerblue;
+}
+.d-flex{
+    border: none;
+}
+

@@ -1,0 +1,16 @@
+<th>
+    <a href="update.php?id=<?php echo $a['id']?>" class="btn btn-warning">Update</a>
+    <a href="controller/delete.php?id=<?php echo $a['id']?>" class="btn btn-danger">Delete</a>
+</th>
+
+id	nombre	apellido	celular	genero
+22	Lexabeth	Gomez	311583348	Femenino
+2	Omar Yesid	Medina torres	12345678	Masculino
+39	Camila sofia	Gomez	312100051	Femenino
+43	Camila Andrea	Gomez Jimenez	310004908	Femenino
+48	Roger	Martinez	4364574	Masculino
+49	Antony	Jimenez	46457645	Masculino
+51	Catherine	Perez	31243541	Femenino
+52	Yulieth	Perez	315345051	Femenino
+55	Yelimar	Rivera rincon	318564230	Femenino
+56	Evelis	Cervantes	315346721	Femenino
